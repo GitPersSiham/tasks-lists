@@ -4,13 +4,11 @@ export default class AuthController {
 
     static getLogin(request: Request, response: Response) {
      /* response.render('login');*/
-     response.send('hello')
+     response.render('login')
     }
 
-
-
      static getSignin(request: Request, response: Response) {
-    response.send('signin');
+    response.render('signin');
     }
 
 }
