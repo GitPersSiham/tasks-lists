@@ -7,6 +7,6 @@ html(lang="en")
     if error
       .error= error
     form(action="/login", method="post")
-      input(type="text", id="username" ,name="username" placeholder="username", required)
-      input(type="password", id="password" name="password" required="password", required)
+      input(type="text", id="username" ,name="username" placeholder="username")
+      input(type="password", id="password" name="password" required="password")
       input(type="submit", value="OK")

@@ -6,5 +6,7 @@ export default class MainController {
     response.render('index');
   }
 
- 
+  static home(request : Request,response: Response) {
+    response.send('home');
+  }
 }
