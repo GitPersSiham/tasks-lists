@@ -29,7 +29,7 @@ class App extends React.Component {
     return (
      <div id="layout">
        
-     < SidebarLeft show={this.toggleSidebar} left={leftOpen}/>
+     <SidebarLeft show={this.toggleSidebar} left={leftOpen}/>
      <Main left={leftOpen} right={rightOpen}/>
      <SidebarRight show={this.toggleSidebar} right={rightOpen}/>
 
