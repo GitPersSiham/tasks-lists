@@ -45,8 +45,9 @@ export default class AuthController {
         });
         response.cookie('jwt', token);
     
-        // 4 : rediriger vers /home
-        response.redirect('/home');
+        // 4 : rediriger vers /home =>(app react)
+       
+       response.redirect('http://localhost:3000')
       }
 
 
