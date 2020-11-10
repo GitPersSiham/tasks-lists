@@ -13,10 +13,6 @@ router.route('/login')
   .get(AuthController.getLogin)
  
 
-
-
-router.get('/home', MainController.home);
-
 router.route('/signin')
   .get(AuthController.getSignin)
   

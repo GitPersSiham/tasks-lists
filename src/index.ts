@@ -5,6 +5,10 @@ import router from "./router";
 const app: express.Express = express();
 const PORT = process.env.PORT || 5050;
 
+// setup view engine
+app.set('views', 'views');
+app.set('view engine', 'pug');
+
 //routing
 app.use(router);
 

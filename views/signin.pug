@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Inscription
+  body
+    if error
+      .error= error
+    form(action="/signin", method="post")
+      input(type="text", name="name")
+      input(type="email", name="name")
+      input(type="password", name="password")
+      input(type="submit", value="OK")
