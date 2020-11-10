@@ -6,17 +6,6 @@ import Main from './pages/Main/index';
 import SidebarLeft from './pages/SidebarLeft/index';
 import SidebarRight from './pages/SidebarRight/index';
 
-/*function App() {
-  return (
-    <div>
-
-
-    </div>
-  );
-}
-
-export default App;*/
-
 
 class App extends React.Component {
   constructor(props) {
