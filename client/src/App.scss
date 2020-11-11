@@ -1,5 +1,5 @@
 div {
-  outline: 1px solid white;
+  //outline: ;//
 }
 
 :root {
@@ -7,7 +7,7 @@ div {
   --portrait-width: 80vw;
   --header-height: 4rem;
   --secs: 0.4s;
-  --bg-left: #abe1ff;
+  --bg-left: rgb(167, 167, 253);
   --bg-right:#abe1ff;
   --bg-main: white;
   
@@ -93,8 +93,6 @@ body {
 }
 .star{
   
-  
-  
   color: red
 }
 
@@ -108,4 +106,15 @@ body {
   margin-top: 20px;
   
 
+}
+h2,h3{
+  color: #444;
+}
+
+button{
+
+  padding:5px;
+}
+input{
+  padding: 5px;
 }
