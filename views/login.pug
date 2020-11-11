@@ -1,12 +1,30 @@
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    title Connexion
-  body
+
+extends includes/layout
+
+block title
+    title login
+block content
     if error
       .error= error
-    form(action="/login", method="post")
-      input(type="text", id="username" ,name="username" placeholder="username")
-      input(type="password", id="password" name="password" required="password")
-      input(type="submit", value="OK")
+    div(class="registration-form")
+        div(class="row")
+            div(class="col-12 text-center") 
+        form(action="/login", method="post")
+            div(class="row")
+                div(class="col-md-2")
+                div(class="col-md-8 text-center form-group align-self-center")
+                    label(for="username") Nom d'utilisateur
+                    input(type="text" class=(usernameError ? "is-invalid form-control" : "form-control") id="username" name="username" required autofocus)
+                div(class="col-md-2")                         
+            div(class="row")    
+                div(class="col-md-2")
+                div(class="col-md-8 text-center form-group align-self-center")
+                    label(for="password") Mot de passe
+                    input(type="password" class=(passwordError ? "is-invalid form-control" : "form-control") id="password" name="password" required)
+                    div(class="col-md-2")              
+            div(class="row")
+                div(class="col-md-2")
+                div(class="col-md-8 text-center form-group")
+                    button(type="submit" class="btn btn-primary") Submit
+                div(class="col-md-2")
+                
