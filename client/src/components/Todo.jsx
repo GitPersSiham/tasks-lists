@@ -39,7 +39,7 @@ export default function Todo(props) {
     <form className="stack-small" onSubmit={handleSubmit}>
       <div className="form-group">
         <label className="todo-label" htmlFor={props.id}>
-          New name for {props.name}
+          Nouveau Nom pour {props.name}
         </label>
         <input
           id={props.id}
@@ -57,12 +57,12 @@ export default function Todo(props) {
           className="btn todo-cancel"
           onClick={() => setEditing(false)}
         >
-          Cancel
-          <span className="visually-hidden">remaing {props.name}</span>
+          Annuler
+          <span className="visually-hidden">restante {props.name}</span>
         </button>
         <button type="submit" className="btn btn__primary todo-edit">
-          Save
-          <span className="visually-hidden">new name for {props.name}</span>
+          Enregister
+          <span className="visually-hidden">nouveau nom pour {props.name}</span>
         </button>
       </div>
     </form>
@@ -85,10 +85,10 @@ export default function Todo(props) {
           <button
             type="button"
             className="btn btn__danger"
-            onClick= {() => props.deleteTask(props.id)}
+            onClick= {() =>{ if (window.confirm('si vous supprimer une tache toutes les autres taches seront suprimés.Etes vous sur ?'))(props.deleteTask(props.id))}}
             
           >
-            Delete <span className="visually-hidden">{props.name}</span>
+            Supprimer <span className="visually-hidden">{props.name}</span>
 
           </button>
         

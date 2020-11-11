@@ -13,7 +13,6 @@ function Form(props) {
     setName("");
   }
 
-
   function handleChange(e) {
     setName(e.target.value);
   }
@@ -25,7 +24,6 @@ function Form(props) {
           Ajouter une nouvelle tache
         </label>
       </h2>
-
       <input
         type="text"
         id="new-todo-input"
