@@ -24,7 +24,7 @@ class App extends React.Component {
 
   render() {
     let leftOpen = this.state.leftOpen ? 'open' : 'closed';
-    let rightOpen = this.state.rightOpen ? 'open' : 'closed';
+    let rightOpen = this.state.rightOpen ? 'closes' : 'open';
 
     return (
      <div id="layout">
