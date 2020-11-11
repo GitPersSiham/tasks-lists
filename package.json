@@ -1,7 +1,7 @@
 {
   "name": "modelets",
   "version": "1.0.0",
-  "description": "Le minimum viable pour faire du typescript dans de bonnes conditions",
+  "description": "",
   "main": "dist/index.js",
   "scripts": {
     "dev": "ts-node ./src/index.ts",
@@ -10,7 +10,7 @@
     "start": "node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Simon MARTIN and Pulsar",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",

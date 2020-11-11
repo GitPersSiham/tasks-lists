@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    title First Page
-  body
-    h1 Hello World! 
+extends includes/layout
 
-    a(href="/login")
-      button(role="button") Connexion
-    
-    a(href='/signin')
-      button(role="button") Inscription
+block title
+     title home
+block content
+    div(class="heading")
+        h3 Creer un compte ou identifiez-vous
+    div(class="block")
+        a(href="/login" )
+          button(role="button" class="btn btn-primary btn-small") Connexion    
+        a(href='/signin' )
+          button(role="button" class="btn btn-primary btn-small") Inscription

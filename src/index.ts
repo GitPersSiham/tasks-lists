@@ -1,16 +1,21 @@
-import express from 'express';
 
+import dotenv from 'dotenv';
+import express from 'express';
 import router from "./router";
 import mongoose from 'mongoose';
 import cookieparser from 'cookie-parser';
 
-const app: express.Express = express();
+dotenv.config();
+
+export const app: express.Express = express();
 const PORT = process.env.PORT || 5050;
+
 
 // setup view engine
 app.set('views', 'views');
 app.set('view engine', 'pug');
 
+app.use(express.static('public'));
 // on utilise le middleware cookie-parser
 app.use(cookieparser());
 
@@ -27,3 +32,5 @@ async function run () {
 }
 
 run();
+
+export default app;
