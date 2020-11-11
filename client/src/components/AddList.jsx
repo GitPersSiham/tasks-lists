@@ -14,16 +14,16 @@ function usePrevious(value) {
 }
 
 const FILTER_MAP = {
-  All: () => true,
-  Active: task => !task.completed,
-  Completed: task => task.completed
+  Toutes : () => true,
+  Active : task => !task.completed,
+  Terminé : task => task.completed
 };
 
 const FILTER_NAMES = Object.keys(FILTER_MAP);
 
 function Addlist(props) {
   const [tasks, setTasks] = useState(props.tasks);
-  const [filter, setFilter] = useState('All');
+  const [filter, setFilter] = useState('Toutes');
 
   function toggleTaskCompleted(id) {
     const updatedTasks = tasks.map(task => {
@@ -86,8 +86,8 @@ function Addlist(props) {
   }
 
 
-  const tasksNoun = taskList.length !== 1 ? 'tasks' : 'task';
-  const headingText = `${taskList.length} ${tasksNoun} remaining`;
+  const tasksNoun = taskList.length !== 1 ? 'taches' : 'tache';
+  const headingText = `${taskList.length} ${tasksNoun} restante`;
 
   const listHeadingRef = useRef(null);
   const prevTaskLength = usePrevious(tasks.length);

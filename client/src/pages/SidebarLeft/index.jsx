@@ -11,8 +11,6 @@ const DATA = [
    
   return (
     
-      
-
 <div id='left' className={props.left} >
     <div className='icon'
          onClick={props.show} >
