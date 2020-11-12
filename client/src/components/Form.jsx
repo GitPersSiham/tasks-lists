@@ -18,12 +18,12 @@ function Form(props) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2 className="label-wrapper">
+    <form className="form" onSubmit={handleSubmit}>
+      <h4 className="label-wrapper">
         <label htmlFor="new-todo-input" className="label__lg">
           Ajouter une nouvelle tache
         </label>
-      </h2>
+      </h4>
       <input
         type="text"
         id="new-todo-input"
@@ -37,6 +37,7 @@ function Form(props) {
         Ajouter
       </button>
     </form>
+    
   );
 }
 

@@ -27,15 +27,14 @@ class App extends React.Component {
     let rightOpen = this.state.rightOpen ? 'closes' : 'open';
 
     return (
+      <>
+  
      <div id="layout">
-       
      <SidebarLeft show={this.toggleSidebar} left={leftOpen}/>
      <Main left={leftOpen} right={rightOpen}/>
      <SidebarRight show={this.toggleSidebar} right={rightOpen}/>
-
      </div>
-
-  
+    </>
     );
   }
 }

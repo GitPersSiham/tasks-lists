@@ -11,7 +11,7 @@ const Date = () => {
 
   return (
     <div>
-      <h2>Date d'echeance</h2>
+      <h4>Date d'echeance</h4>
       <Form
         name="testForm"
         onSubmit={data => {
