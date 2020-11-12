@@ -4,11 +4,16 @@ import express from 'express';
 import router from "./router";
 import mongoose from 'mongoose';
 import cookieparser from 'cookie-parser';
+import swaggerUi from 'swagger-ui-express';
+import YAML from 'yamljs';
+const swaggerDocument = YAML.load('./sawagger.yaml');
 
 dotenv.config();
 
 export const app: express.Express = express();
 const PORT = process.env.PORT || 5050;
+
+
 
 
 // setup view engine
@@ -21,6 +26,8 @@ app.use(cookieparser());
 
 //routing
 app.use(router);
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 async function run () {
   // connexion à la BD
