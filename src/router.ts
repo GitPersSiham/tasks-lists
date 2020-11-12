@@ -15,6 +15,8 @@ router.route('/login')
   .get(AuthController.getLogin)
   .post(bodyParser, AuthController.postLogin);
 
+  router.get('/logout', AuthController.logout);
+  
 router.route('/signin')
   .get(AuthController.getSignin)
   .post(bodyParser, AuthController.postSignin);
