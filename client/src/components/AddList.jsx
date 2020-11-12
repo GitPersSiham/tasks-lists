@@ -104,9 +104,9 @@ function Addlist(props) {
       <div className="filters btn-group stack-exception">
         {filterList}
       </div>
-      <h2 id="list-heading" tabIndex="-1" ref={listHeadingRef}>
+      <h4 id="list-heading" tabIndex="-1" ref={listHeadingRef}>
         {headingText}
-      </h2>
+      </h4>
       <ul
         role="list"
         className="todo-list stack-large stack-exception"

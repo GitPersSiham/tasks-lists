@@ -85,7 +85,7 @@ export default function Todo(props) {
           <button
             type="button"
             className="btn btn__danger"
-            onClick= {() =>{ if (window.confirm('si vous supprimer une tache toutes les autres taches seront suprimés.Etes vous sur ?'))(props.deleteTask(props.id))}}
+            onClick= {() =>{ if (window.confirm('êtes-vous sûr de vouloir supprimer cette tache ?'))(props.deleteTask(props.id))}}
             
           >
             Supprimer <span className="visually-hidden">{props.name}</span>

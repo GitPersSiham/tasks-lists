@@ -107,14 +107,32 @@ body {
   
 
 }
-h2,h3{
+h2,h4{
   color: #444;
+
 }
 
-button{
 
-  padding:5px;
-}
 input{
   padding: 5px;
+}
+button{
+
+  margin-right: 5px;
+}
+form {
+margin-bottom: 10px;
+
+}
+.icon{
+ color: rgb(103, 103, 252);
+}
+.content {
+
+  margin-top: 20px;
+}
+a{
+  
+ text-decoration: none; 
+ color: #444;
 }
