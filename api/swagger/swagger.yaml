@@ -1,0 +1,22 @@
+swagger: "2.0"
+info:
+  title: tasks-list
+  description: Optional multiline or single-line description in HTML.
+  version: 0.1.9
+servers:
+  - url: http://localhost:5050
+    description: Optional server description, e.g. Main (production) server
+paths:
+  /:
+    get:
+      summary: dans la homepage l'utlisateur peut seconnecter ou creer un compte .
+      description: Optional extended description in CommonMark or HTML.
+      responses:
+         '200':    
+          description: 
+          content:
+            application/json:
+              schema: 
+                type: array
+                items: 
+                  type: string
