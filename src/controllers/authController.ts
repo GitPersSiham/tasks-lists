@@ -50,6 +50,13 @@ export default class AuthController {
        response.redirect('http://localhost:3000')
       }
 
+      static logout(request: Request, response: Response) {
+        // il faut détruire le jeton => on détruit le cookie
+        response.clearCookie('jwt');
+        response.redirect('/');
+      }
+    
+
 
 
      static getSignin(request: Request, response: Response) {
